@@ -8,8 +8,10 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-M9328N9KVQ');
-  gtag('config', 'UA-191580638-1');
+  gtag('config', 'G-M9328N9KVQ', { 'groups': 'GA4' });
+  gtag('config', 'UA-191580638-1', { 'groups': 'UA' });
+  gtag('event', 'ViewCam_Switch_next', { 'send_to': 'GA4' });
+  gtag('event', 'Switch', { 'send_to': 'UA' });
 </script>
     <meta charset="utf-8" />
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
